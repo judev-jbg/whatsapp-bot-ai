@@ -1,16 +1,28 @@
 {
-  "name": "whatsapp-bot-ai",
+  "name": "whatsapp-ai-assistant",
   "version": "1.0.0",
+  "description": "Asistente inteligente para WhatsApp Business con integración de IA",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "LOG_LEVEL=DEBUG node index.js"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "openai": "^4.84.0",
-    "puppeteer": "^24.2.0",
+    "axios": "^1.3.4",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.26.0"
-  }
+    "whatsapp-web.js": "^1.19.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "private": true,
+  "keywords": [
+    "whatsapp",
+    "ai",
+    "assistant",
+    "bot",
+    "openai"
+  ]
 }
